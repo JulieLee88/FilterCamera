@@ -1,0 +1,93 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "SocialButton"
+provides-nominal:
+- "C12FastttCamera12SocialButton"
+provides-member:
+- ["C12FastttCamera12SocialButton", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- "SocialButton"
+- "UIButton"
+depends-member:
+- ["PSs9AnyObject", "init"]
+- ["PSs9AnyObject", ""]
+- ["PSs11CVarArgType", "init"]
+- ["PSs11CVarArgType", ""]
+- ["PSs23CustomStringConvertible", "init"]
+- ["PSs23CustomStringConvertible", ""]
+- ["PSs9Equatable", "init"]
+- ["PSs9Equatable", ""]
+- ["PSs8Hashable", "init"]
+- ["PSs8Hashable", ""]
+- ["PSo8NSCoding", "init"]
+- ["PSo8NSCoding", ""]
+- ["CSo8NSObject", "init"]
+- ["PSo16NSObjectProtocol", "init"]
+- ["PSo16NSObjectProtocol", ""]
+- ["C12FastttCamera12SocialButton", "deinit"]
+- ["C12FastttCamera12SocialButton", "init"]
+- ["PSo29UIAccessibilityIdentification", "init"]
+- ["PSo29UIAccessibilityIdentification", ""]
+- ["PSo12UIAppearance", "init"]
+- ["PSo12UIAppearance", ""]
+- ["PSo21UIAppearanceContainer", "init"]
+- ["PSo21UIAppearanceContainer", ""]
+- ["CSo8UIButton", "init"]
+- ["CSo8UIButton", ""]
+- ["CSo9UIControl", "init"]
+- ["PSo17UICoordinateSpace", "init"]
+- ["PSo17UICoordinateSpace", ""]
+- ["PSo13UIDynamicItem", "init"]
+- ["PSo13UIDynamicItem", ""]
+- ["PSo18UIFocusEnvironment", "init"]
+- ["PSo18UIFocusEnvironment", ""]
+- ["CSo11UIResponder", "init"]
+- ["PSo18UITraitEnvironment", "init"]
+- ["PSo18UITraitEnvironment", ""]
+- ["CSo6UIView", "init"]
+- ["PSs12_Reflectable", "init"]
+- ["PSs12_Reflectable", ""]
+depends-nominal:
+- "PSs9AnyObject"
+- "PSs11CVarArgType"
+- "PSs23CustomStringConvertible"
+- "PSs9Equatable"
+- "PSs8Hashable"
+- "PSo8NSCoding"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- "C12FastttCamera12SocialButton"
+- "PSo29UIAccessibilityIdentification"
+- "PSo12UIAppearance"
+- "PSo21UIAppearanceContainer"
+- "CSo8UIButton"
+- "CSo9UIControl"
+- "PSo17UICoordinateSpace"
+- "PSo13UIDynamicItem"
+- "PSo18UIFocusEnvironment"
+- "CSo11UIResponder"
+- "PSo18UITraitEnvironment"
+- "CSo6UIView"
+- "PSs12_Reflectable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
+- "/Users/Masuhara/Desktop/FastttCamera/FastttCamera/FastttCamera-Bridging-Header.h"
+- "/Users/Masuhara/Desktop/FastttCamera/Pods/Headers/Public/FastttCamera/FastttFilterCamera.h"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
+- "/Users/Masuhara/Desktop/FastttCamera/Pods/Headers/Public/FastttCamera/FastttCameraInterface.h"
+- "/Users/Masuhara/Desktop/FastttCamera/Pods/Headers/Public/FastttCamera/FastttCameraTypes.h"
+- "/Users/Masuhara/Desktop/FastttCamera/Pods/Headers/Public/FastttCamera/FastttCapturedImage.h"
+- "/Users/Masuhara/Desktop/FastttCamera/Pods/Headers/Public/FastttCamera/UIViewController+FastttCamera.h"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/AVFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreMedia.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreAudio.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreLocation.swiftmodule"
+interface-hash: "2e36f1c3860a89b9a84c53282fd8c73e"
