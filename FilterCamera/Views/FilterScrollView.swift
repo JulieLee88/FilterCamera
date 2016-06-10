@@ -34,7 +34,7 @@ class FilterScrollView: UIScrollView {
         self.showsHorizontalScrollIndicator = false
         
         var currentX: CGFloat = 0
-        images = [UIImage(named: "RetroFilter")!, UIImage(named: "HighContrastFilter")!, UIImage(named: "SepiaFilter")!, UIImage(named: "BWFilter")!, UIImage(named: "RedEyes")!]
+        images = [UIImage(named: "RetroFilter")!, UIImage(named:"HighContrastFilter")!, UIImage(named: "SepiaFilter")!, UIImage(named: "BWFilter")!, UIImage(named: "RedEyes")!]
         
         if let imageArray = images {
             for var i = 0; i < imageArray.count; i++ {

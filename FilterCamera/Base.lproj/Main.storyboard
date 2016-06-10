@@ -18,42 +18,45 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vOA-fG-FaA">
-                                <rect key="frame" x="216" y="9" width="45" height="30"/>
-                                <state key="normal" title="switch"/>
+                                <rect key="frame" x="236" y="4" width="58" height="58"/>
+                                <state key="normal" backgroundImage="flipcamera.png"/>
                                 <connections>
                                     <action selector="switchcamera" destination="BYZ-38-t0r" eventType="touchUpInside" id="OMx-yS-mJD"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hSL-2r-Lw7">
-                                <rect key="frame" x="33" y="9" width="34" height="30"/>
-                                <state key="normal" title="flash"/>
+                                <rect key="frame" x="23" y="17" width="38" height="38"/>
+                                <state key="normal" backgroundImage="flashbutton.png"/>
                                 <connections>
                                     <action selector="flash" destination="BYZ-38-t0r" eventType="touchUpInside" id="Vbm-5p-ca5"/>
                                 </connections>
                             </button>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dCF-DM-6zK">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dCF-DM-6zK" customClass="FilterScrollView" customModule="FilterCamera" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="416" width="320" height="56"/>
                             </scrollView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eH1-Qo-dv5">
-                                <rect key="frame" x="0.0" y="106" width="320" height="320"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MzC-Mq-nJR">
-                                <rect key="frame" x="123" y="480" width="74" height="30"/>
-                                <state key="normal" title="take photo"/>
+                                <rect key="frame" x="146" y="494" width="54" height="54"/>
+                                <state key="normal" backgroundImage="takebutton.png"/>
                                 <connections>
                                     <action selector="takePhoto" destination="BYZ-38-t0r" eventType="touchUpInside" id="orb-bD-Wcq"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="axn-9h-byD">
+                                <rect key="frame" x="40" y="93" width="240" height="173"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
-                        <outlet property="view" destination="eH1-Qo-dv5" id="UfA-s5-FPw"/>
+                        <outlet property="cameraView" destination="axn-9h-byD" id="YaL-jA-jhd"/>
+                        <outlet property="filterScrollView" destination="dCF-DM-6zK" id="KYP-ys-8VR"/>
+                        <segue destination="NRB-L6-Mts" kind="modal" id="AOT-T4-WWn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="130" y="297"/>
+            <point key="canvasLocation" x="86" y="245"/>
         </scene>
         <!--Edit View Controller-->
         <scene sceneID="RHZ-fc-sMg">
@@ -67,28 +70,61 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8zt-3r-OFi">
-                                <rect key="frame" x="60" y="76" width="240" height="128"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="slW-y6-CgA">
-                                <rect key="frame" x="52" y="322" width="45" height="30"/>
-                                <state key="normal" title="twitter"/>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ov8-kt-Q9D">
-                                <rect key="frame" x="177" y="322" width="64" height="30"/>
-                                <state key="normal" title="facebook"/>
+                                <rect key="frame" x="189" y="322" width="91" height="30"/>
+                                <color key="backgroundColor" red="0.15417542093684833" green="0.031795306497364839" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Facebook">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="shareToFacebook" destination="NRB-L6-Mts" eventType="touchUpInside" id="TK2-17-82h"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jJd-Pb-RcH">
+                                <rect key="frame" x="26" y="28" width="27" height="27"/>
+                                <state key="normal" backgroundImage="cancel.png"/>
+                                <connections>
+                                    <action selector="didTapCancelButton" destination="NRB-L6-Mts" eventType="touchUpInside" id="DDx-2R-CH7"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hmk-re-Ueb">
-                                <rect key="frame" x="158" y="392" width="32" height="30"/>
-                                <state key="normal" title="save"/>
+                                <rect key="frame" x="44" y="377" width="233" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.10392284044567024" blue="0.67175356836404332" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Save"/>
+                                <connections>
+                                    <action selector="saveInPhotoLibrary" destination="NRB-L6-Mts" eventType="touchUpInside" id="56e-oX-7EM"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8zt-3r-OFi">
+                                <rect key="frame" x="40" y="90" width="240" height="128"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="slW-y6-CgA">
+                                <rect key="frame" x="44" y="322" width="91" height="30"/>
+                                <color key="backgroundColor" red="0.28863829149220588" green="0.66715009432765826" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Twitter">
+                                    <color key="titleColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="shareToTwitter" destination="NRB-L6-Mts" eventType="touchUpInside" id="JSd-5K-B2k"/>
+                                </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="imageView" destination="8zt-3r-OFi" id="Xwz-XJ-A2i"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6BZ-SA-x6q" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="509" y="297"/>
+            <point key="canvasLocation" x="476" y="250"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="cancel.png" width="128" height="128"/>
+        <image name="flashbutton.png" width="200" height="200"/>
+        <image name="flipcamera.png" width="256" height="256"/>
+        <image name="takebutton.png" width="200" height="200"/>
+    </resources>
 </document>

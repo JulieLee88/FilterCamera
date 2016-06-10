@@ -31,9 +31,7 @@ class ViewController: UIViewController,FastttCameraDelegate,FilterScrollViewDele
     @IBOutlet weak var cameraView: UIView!
     @IBOutlet weak var filterScrollView: FilterScrollView!
     
-    //  let camera: FastttCamera = FastttCamera()
-    
-    //var images: UIImage?
+ 
     
     override func viewDidLoad() {
         
@@ -45,7 +43,7 @@ class ViewController: UIViewController,FastttCameraDelegate,FilterScrollViewDele
         
         //  self.fastttAddChildViewController(camera)
         
-        camera.view.frame = cameraView.frame
+       
         self.currentFilter = Filter.filterWithType(Filter.FastttFilterType.None)
         camera = FastttFilterCamera(filterImage: self.currentFilter?.filterImage)
         camera.view.frame = cameraView.frame
@@ -102,24 +100,32 @@ class ViewController: UIViewController,FastttCameraDelegate,FilterScrollViewDele
     
     @IBAction private func switchcamera(){
         
-        if FastttCamera.isCameraDeviceAvailable(FastttCameraDevice.Front){
+        if FastttFilterCamera.isCameraDeviceAvailable(FastttCameraDevice.Front){
             
             if camera.cameraDevice == FastttCameraDevice.Front{
-                
                 camera.cameraDevice = FastttCameraDevice.Rear
                 
             }else {
-                
                 camera.cameraDevice = FastttCameraDevice.Front
             }
-            
         }
         
     }
     
+    @IBAction private func flash (){
+        if FastttFilterCamera.isTorchAvailableForCameraDevice(camera.cameraDevice){
+        if camera.cameraTorchMode == FastttCameraTorchMode.Off{
+            camera.cameraTorchMode == FastttCameraTorchMode.On
+        }else{
+            camera.cameraTorchMode = FastttCameraTorchMode.Off
+        }
+    } else {
+        print("Torchmode is currently unavailabele.")
+    }
+    }
     private func cangeFilter() {
-        self.currentFilter = self.currentFilter!nextFilter()
-        camera.filterImage = self.currentFilter!filterImage
+        self.currentFilter = self.currentFilter!.nextFilter()
+        camera.filterImage = self.currentFilter!.filterImage
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {

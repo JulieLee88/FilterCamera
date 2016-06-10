@@ -1,9 +1,0 @@
-version: "Apple Swift version 2.1.1 (swiftlang-700.1.101.15 clang-700.1.81)"
-options: "d50a653c7eaf215ab880724ba026539d"
-build_time: [510951009, 469551000]
-inputs:
-  "/Users/Masuhara/Desktop/FastttCamera/FastttCamera/Controllers/ViewController.swift": [510950599, 0]
-  "/Users/Masuhara/Desktop/FastttCamera/FastttCamera/Controllers/AppDelegate.swift": [510750607, 0]
-  "/Users/Masuhara/Desktop/FastttCamera/FastttCamera/Models/FilterScrollView.swift": [510946629, 0]
-  "/Users/Masuhara/Desktop/FastttCamera/FastttCamera/Models/Filter.swift": [510948484, 0]
-  "/Users/Masuhara/Desktop/FastttCamera/FastttCamera/Controllers/EditViewController.swift": [510950999, 0]

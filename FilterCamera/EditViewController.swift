@@ -12,7 +12,7 @@ import Social
 
 
 
-class editViewController: UIViewController {
+class EditViewController: UIViewController {
 
 
     var image: UIImage?
