@@ -1,0 +1,7 @@
+version: "Apple Swift version 2.1.1 (swiftlang-700.1.101.15 clang-700.1.81)"
+options: "121a2bc5a3d84971e498a50a2679ae4c"
+build_time: [510903270, 577118000]
+inputs:
+  "/Users/Masuhara/Desktop/FastttCamera/FastttCamera/Filter.swift": [510859215, 0]
+  "/Users/Masuhara/Desktop/FastttCamera/FastttCamera/ViewController.swift": [510858130, 0]
+  "/Users/Masuhara/Desktop/FastttCamera/FastttCamera/AppDelegate.swift": [510750607, 0]
