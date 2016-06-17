@@ -13,6 +13,8 @@ class SelectViewController: UIViewController,UIImagePickerControllerDelegate,UIN
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+          imageFromCameraRoll.contentMode = .ScaleAspectFit
 
         // Do any additional setup after loading the view.
     }
@@ -22,13 +24,27 @@ class SelectViewController: UIViewController,UIImagePickerControllerDelegate,UIN
         // Dispose of any resources that can be recreated.
     }
     @IBAction func Album(sender :AnyObject){
-        
+        pickImageFromLibrary()
     }
     func pickImageFromLibrary(){
         if UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.PhotoLibrary){
+            let controller = UIImagePickerController()
+            controller.delegate = self
+            controller.sourceType = UIImagePickerControllerSourceType.PhotoLibrary
+         self.presentViewController(controller, animated: true, completion: nil)
+        }
+        
+        }
+    func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo: [String: AnyObject]){
+        if didFinishPickingMediaWithInfo[UIImagePickerControllerOriginalImage] != nil{
+            imageFromCameraRoll.image = didFinishPickingMediaWithInfo[UIImagePickerControllerOriginalImage] as? UIImage
             
         }
+        picker.dismissViewControllerAnimated(true, completion: nil)
     }
+
+    }
+
 
     /*
     // MARK: - Navigation
@@ -40,4 +56,4 @@ class SelectViewController: UIViewController,UIImagePickerControllerDelegate,UIN
     }
     */
 
-}
+
