@@ -17,8 +17,10 @@
 		D41F61C71D0ADCC500456CA3 /* flipcamera@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D41F61C61D0ADCC500456CA3 /* flipcamera@2x.jpg */; };
 		D41F61CD1D0ADE7A00456CA3 /* flashbutton@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D41F61CC1D0ADE7A00456CA3 /* flashbutton@2x.jpg */; };
 		D41F61CF1D0ADFB100456CA3 /* cancel.png in Resources */ = {isa = PBXBuildFile; fileRef = D41F61CE1D0ADFB100456CA3 /* cancel.png */; };
-		D41F61D31D0C3A0600456CA3 /* camera-rogo.png in Resources */ = {isa = PBXBuildFile; fileRef = D41F61D21D0C3A0600456CA3 /* camera-rogo.png */; };
-		D41F61D51D0C3B2100456CA3 /* 名称未設定-11.png in Resources */ = {isa = PBXBuildFile; fileRef = D41F61D41D0C3B2100456CA3 /* 名称未設定-11.png */; };
+		D41F61DD1D14095200456CA3 /* SelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41F61DC1D14095200456CA3 /* SelectViewController.swift */; };
+		D41F61DF1D140A1900456CA3 /* 名称未設定-11.png in Resources */ = {isa = PBXBuildFile; fileRef = D41F61DE1D140A1900456CA3 /* 名称未設定-11.png */; };
+		D41F61E11D140A1E00456CA3 /* camera-rogo.png in Resources */ = {isa = PBXBuildFile; fileRef = D41F61E01D140A1E00456CA3 /* camera-rogo.png */; };
+		D41F61E31D140C8D00456CA3 /* AlbumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41F61E21D140C8D00456CA3 /* AlbumViewController.swift */; };
 		D46BFFCC1C92DF0600A3CA12 /* EditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D46BFFCB1C92DF0600A3CA12 /* EditViewController.swift */; };
 		D46BFFCE1C92E70700A3CA12 /* Filter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D46BFFCD1C92E70700A3CA12 /* Filter.swift */; };
 		D46BFFE11C92E83800A3CA12 /* redeyes.png in Resources */ = {isa = PBXBuildFile; fileRef = D46BFFD51C92E83800A3CA12 /* redeyes.png */; };
@@ -44,8 +46,10 @@
 		D41F61C61D0ADCC500456CA3 /* flipcamera@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "flipcamera@2x.jpg"; sourceTree = "<group>"; };
 		D41F61CC1D0ADE7A00456CA3 /* flashbutton@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "flashbutton@2x.jpg"; sourceTree = "<group>"; };
 		D41F61CE1D0ADFB100456CA3 /* cancel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cancel.png; sourceTree = "<group>"; };
-		D41F61D21D0C3A0600456CA3 /* camera-rogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "camera-rogo.png"; path = "../../camera-rogo.png"; sourceTree = "<group>"; };
-		D41F61D41D0C3B2100456CA3 /* 名称未設定-11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "名称未設定-11.png"; path = "../../名称未設定-11.png"; sourceTree = "<group>"; };
+		D41F61DC1D14095200456CA3 /* SelectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectViewController.swift; sourceTree = "<group>"; };
+		D41F61DE1D140A1900456CA3 /* 名称未設定-11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "名称未設定-11.png"; sourceTree = "<group>"; };
+		D41F61E01D140A1E00456CA3 /* camera-rogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "camera-rogo.png"; sourceTree = "<group>"; };
+		D41F61E21D140C8D00456CA3 /* AlbumViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AlbumViewController.swift; path = Resources/AlbumViewController.swift; sourceTree = "<group>"; };
 		D46BFFCB1C92DF0600A3CA12 /* EditViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditViewController.swift; sourceTree = "<group>"; };
 		D46BFFCD1C92E70700A3CA12 /* Filter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Filter.swift; sourceTree = "<group>"; };
 		D46BFFD51C92E83800A3CA12 /* redeyes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = redeyes.png; sourceTree = "<group>"; };
@@ -107,11 +111,11 @@
 		D46BFFD11C92E83800A3CA12 /* Camera */ = {
 			isa = PBXGroup;
 			children = (
-				D41F61D21D0C3A0600456CA3 /* camera-rogo.png */,
 				D41F61C41D0AD54800456CA3 /* camera.png */,
 				D41F61CC1D0ADE7A00456CA3 /* flashbutton@2x.jpg */,
-				D41F61D41D0C3B2100456CA3 /* 名称未設定-11.png */,
+				D41F61E01D140A1E00456CA3 /* camera-rogo.png */,
 				D41F61CE1D0ADFB100456CA3 /* cancel.png */,
+				D41F61DE1D140A1900456CA3 /* 名称未設定-11.png */,
 				D46BFFD51C92E83800A3CA12 /* redeyes.png */,
 				D41F61C61D0ADCC500456CA3 /* flipcamera@2x.jpg */,
 			);
@@ -149,8 +153,10 @@
 			isa = PBXGroup;
 			children = (
 				D4CE0BEA1C8EE94F0081337E /* AppDelegate.swift */,
-				D46BFFCB1C92DF0600A3CA12 /* EditViewController.swift */,
+				D41F61E21D140C8D00456CA3 /* AlbumViewController.swift */,
+				D41F61DC1D14095200456CA3 /* SelectViewController.swift */,
 				D4CE0BEC1C8EE94F0081337E /* ViewController.swift */,
+				D46BFFCB1C92DF0600A3CA12 /* EditViewController.swift */,
 				D46BFFE91C92E86200A3CA12 /* FilterScrollView.swift */,
 				D46BFFCD1C92E70700A3CA12 /* Filter.swift */,
 				D4C957CC1D019F0A005D5B14 /* Main.storyboard */,
@@ -243,11 +249,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D41F61DF1D140A1900456CA3 /* 名称未設定-11.png in Resources */,
 				D41F61BD1D0ACEB700456CA3 /* Default-736h@3x.png in Resources */,
 				D41F61CD1D0ADE7A00456CA3 /* flashbutton@2x.jpg in Resources */,
 				D41F61BE1D0ACEB700456CA3 /* Default.png in Resources */,
 				D41F61C51D0AD54800456CA3 /* camera.png in Resources */,
-				D41F61D31D0C3A0600456CA3 /* camera-rogo.png in Resources */,
 				D4C957CE1D019F0A005D5B14 /* Main.storyboard in Resources */,
 				D41F61CF1D0ADFB100456CA3 /* cancel.png in Resources */,
 				D46BFFE11C92E83800A3CA12 /* redeyes.png in Resources */,
@@ -256,8 +262,8 @@
 				D46BFFE61C92E83800A3CA12 /* Images.xcassets in Resources */,
 				D41F61BC1D0ACEB700456CA3 /* Default-667h@2x.png in Resources */,
 				D41F61BB1D0ACEB700456CA3 /* Default-568h@2x.png in Resources */,
-				D41F61D51D0C3B2100456CA3 /* 名称未設定-11.png in Resources */,
 				D46BFFE71C92E83800A3CA12 /* Info.plist in Resources */,
+				D41F61E11D140A1E00456CA3 /* camera-rogo.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -320,7 +326,9 @@
 				D4CE0BED1C8EE94F0081337E /* ViewController.swift in Sources */,
 				D46BFFCE1C92E70700A3CA12 /* Filter.swift in Sources */,
 				D4CE0BEB1C8EE94F0081337E /* AppDelegate.swift in Sources */,
+				D41F61DD1D14095200456CA3 /* SelectViewController.swift in Sources */,
 				D46BFFCC1C92DF0600A3CA12 /* EditViewController.swift in Sources */,
+				D41F61E31D140C8D00456CA3 /* AlbumViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1713" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1713" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2pr-KO-IUS">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Select View Controller-->
         <scene sceneID="U81-bN-TcS">
             <objects>
-                <viewController id="2pr-KO-IUS" sceneMemberID="viewController">
+                <viewController id="2pr-KO-IUS" customClass="SelectViewController" customModule="FilterCamera" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="2tf-NM-O2D"/>
                         <viewControllerLayoutGuide type="bottom" id="Nel-90-iid"/>
@@ -17,13 +17,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yV0-1I-ThX">
-                                <rect key="frame" x="20" y="237" width="114" height="114"/>
-                                <state key="normal" backgroundImage="camera-rogo.png"/>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BJo-cK-jeT">
-                                <rect key="frame" x="192" y="245" width="100" height="106"/>
+                                <rect key="frame" x="179" y="332" width="107" height="113"/>
                                 <state key="normal" backgroundImage="名称未設定-11.png"/>
+                                <connections>
+                                    <segue destination="EZG-yc-QGm" kind="modal" id="1tx-98-4tA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yV0-1I-ThX">
+                                <rect key="frame" x="42" y="320" width="114" height="114"/>
+                                <state key="normal" backgroundImage="camera-rogo.png"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="modal" id="nVh-kk-bcK"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -31,12 +37,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bmg-2d-AiB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-278" y="347"/>
+            <point key="canvasLocation" x="-444" y="301"/>
         </scene>
-        <!--Edit View Controller-->
+        <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="EditViewController" customModule="FilterCamera" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FilterCamera" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -68,7 +74,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vOA-fG-FaA">
                                 <rect key="frame" x="225" y="9" width="56" height="56"/>
-                                <state key="normal" image="flipcamera.jpg" backgroundImage="B6AE97B4-02D0-4369-B941-361EFFC2C19A"/>
+                                <state key="normal" image="flipcamera.jpg" backgroundImage="D7034B03-D2BB-4A03-9632-E355D9C61208"/>
                                 <connections>
                                     <action selector="switchcamera" destination="BYZ-38-t0r" eventType="touchUpInside" id="OMx-yS-mJD"/>
                                 </connections>
@@ -84,7 +90,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-42" y="242"/>
+            <point key="canvasLocation" x="-46" y="289"/>
         </scene>
         <!--Edit View Controller-->
         <scene sceneID="RHZ-fc-sMg">
@@ -146,11 +152,29 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6BZ-SA-x6q" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="326" y="242"/>
+            <point key="canvasLocation" x="418" y="264"/>
+        </scene>
+        <!--Album View Controller-->
+        <scene sceneID="A1V-tX-os2">
+            <objects>
+                <viewController id="EZG-yc-QGm" customClass="AlbumViewController" customModule="FilterCamera" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="BJk-ae-sCu"/>
+                        <viewControllerLayoutGuide type="bottom" id="ODg-Kr-wYQ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="MRo-Jh-Qph">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JDF-CJ-viq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-46" y="-355"/>
         </scene>
     </scenes>
     <resources>
-        <image name="B6AE97B4-02D0-4369-B941-361EFFC2C19A" width="256" height="256">
+        <image name="D7034B03-D2BB-4A03-9632-E355D9C61208" width="256" height="256">
             <mutableData key="keyedArchiveRepresentation">
 YnBsaXN0MDDUAQIDBAUGPj9YJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK4HCBMU
 GR4fIyQsLzI4O1UkbnVsbNUJCgsMDQ4PEBESVk5TU2l6ZVYkY2xhc3NcTlNJbWFnZUZsYWdzVk5TUmVw
